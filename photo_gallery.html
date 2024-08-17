@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="photo_gallery.css">
+</head>
+<body>
+    <!-- Photo Gallery -->
+    <section class="gallery">
+        <div class="container">
+            <h1>Photo Gallery</h1>
+            <div class="gallery-grid">
+                <!-- Gallery Items -->
+                <div class="gallery-item" onclick="openModal('image1.jpg')">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ66ehrmpr0aPPklBr-hM4if0RfKKgmByUzoA&s" alt="Image 1">
+                </div>
+                <div class="gallery-item" onclick="openModal('image2.jpg')">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCIYN_LAxM3KN88JYVMICXux-DxNvnJ9t_2A&s" alt="Image 2">
+                </div>
+                <div class="gallery-item" onclick="openModal('image3.jpg')">
+                    <img src="https://cdn.pixabay.com/photo/2013/07/30/03/14/istanbul-168774_640.jpg" alt="Image 3">
+                </div>
+                <div class="gallery-item" onclick="openModal('image4.jpg')">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0r4H4s11I1hxEvlCyeJGu7SNQf7QawruVA&s" alt="Image 4">
+                </div>
+                <div class="gallery-item" onclick="openModal('image5.jpg')">
+                    <img src="https://media.timeout.com/images/105304700/image.jpg" alt="Image 5">
+                </div>
+                <div class="gallery-item" onclick="openModal('image6.jpg')">
+                    <img src="https://cdn.pixabay.com/photo/2018/11/21/21/05/national-gallery-3830582_640.jpg" alt="Image 6">
+                </div>
+                <div class="gallery-item" onclick="openModal('image7.jpg')">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/gallery-wall-photo-wall-desenio-6498896739de7.jpg" alt="Image 7">
+                </div>
+                <div class="gallery-item" onclick="openModal('image8.jpg')">
+                    <img src="https://images.pexels.com/photos/3004909/pexels-photo-3004909.jpeg?cs=srgb&dl=pexels-suzyhazelwood-3004909.jpg&fm=jpg" alt="Image 8">
+                </div>
+                <div class="gallery-item" onclick="openModal('image9.jpg')">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ8ZUlqrm5RaFSCHuC_Kjj9-ZtI3--YW7J8Q&s" alt="Image 9">
+                </div>
+                <div class="gallery-item" onclick="openModal('image10.jpg')">
+                    <img src="https://images.freeimages.com/images/large-previews/64d/sun-gallery-1198838.jpg?fmt=webp&w=500" alt="Image 10">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <script src="photo_gallery.js"></script>
+</body>
+</html>
